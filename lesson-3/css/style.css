@@ -1,0 +1,87 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+[class*="title"] {
+	color: green;
+}
+#introduction p {
+	color: purple;
+}
+#population_religion div > p {
+	color: yellow;
+}
+#population_religion div > p + p {
+	color: orangered;
+}
+.content__item .page__text p ~ p {
+	color: blue;
+}
+.wrapper {
+}
+.header {
+}
+.header__title {
+	font-size: 50px;
+}
+.header__menu {
+}
+.menu-header {
+}
+.menu-header__list > .menu-header__item {
+	color: red;
+}
+
+.menu-header__list > .menu-header__item + .menu-header__item {
+	color: yellow;
+}
+.menu-header__list > .menu-header__item + .menu-header__item ~ .menu-header__item {
+	color: blueviolet;
+}
+.menu-header__link {
+}
+.page {
+}
+.page__content {
+}
+.content {
+}
+.content__item {
+}
+.page__title {
+	font-size: 35px;
+}
+.title {
+}
+.page__text {
+}
+.page__image {
+}
+/* -------------------------------------------------------------------  */
+.page__traning {
+}
+.traning {
+}
+/* 1 рівень вкладеності => перший li має бути червоного кольору, всі інші пункти зеленого кольору */
+.traning > ul > li {
+	color: red;
+}
+.traning > ul > li ~ li {
+	color: green;
+}
+/* 2 рівень вкладеності => перший li має бути синього кольору, всі інші li 2 рівня вкладеності помаранчевого */
+.traning > ul li ul > li {
+	color: blue;
+}
+.traning > ul li ul > li ~ li {
+	color: orange;
+}
+.traning > ul li ul > li > span {
+	color: #a0f0fc;
+}
+/* 3 рівень вкладеності => перший li має бути #4597f7кольору, всі інші li 3 рівня вкладеності #5d5d5d */
+.traning > ul li ul > li ol > li {
+	color: #4597f7;
+}
+.traning > ul li ul > li ol > li ~ li {
+	color: #5d5d5d;
+}
