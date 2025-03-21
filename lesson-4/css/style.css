@@ -1,0 +1,126 @@
+/* Підключення фрифтів */
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500&display=swap");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+/* --------------------------------------------------------------------------- */
+.page {
+}
+.page__blog {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.blog {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
+}
+.blog__title {
+	color: #1a1a1a;
+	font-size: 20px;
+	font-weight: 500;
+}
+.blog__title:not(:last-child) {
+	margin-bottom: 16px;
+}
+.blog__text {
+	color: #808080;
+	font-size: 18px;
+	font-weight: 400;
+}
+.blog__text p:not(:last-child) {
+	margin-bottom: 24px;
+}
+/* --------------------------------------------------------------------------- */
+.page__training {
+}
+.training {
+	padding-bottom: 24px;
+}
+.training__title {
+	font-size: 35px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	color: green;
+	text-align: center;
+	text-decoration-color: yellow;
+	text-decoration-style: dashed;
+	line-height: 1.5;
+}
+.training__title:not(:last-child) {
+	margin-bottom: 25px;
+}
+.training__type {
+}
+.type-training {
+	font-size: 25px;
+}
+.type-training__serif:not(:last-child),
+.type-training__cursive:not(:last-child),
+.type-training__fantasy:not(:last-child),
+.type-training__monospace:not(:last-child) {
+	margin-bottom: 15px;
+}
+.type-training__serif {
+	font-family: "Libre Baskerville", serif;
+	font-style: italic;
+	font-weight: 600;
+	text-align: right;
+	text-decoration: overline;
+	color: #ff4000;
+	line-height: 1.2;
+}
+.type-training__cursive {
+	font-family: "Lucy Said", cursive;
+	text-align: justify;
+	color: #bfff00;
+	text-shadow: 5px 10px 5px blue;
+	line-height: 1.3;
+	word-spacing: 3.5px;
+}
+.type-training__fantasy {
+	font-family: "Heroking-Regular", fantasy;
+	text-decoration: line-through;
+	color: rgb(0, 64, 255, 0.5);
+	line-height: 1.4;
+	letter-spacing: 2px;
+}
+.type-training__monospace {
+	font-family: "SpaceMono", monospace;
+	line-height: 1.1;
+}
+.type-training__monospace p:not(:last-child) {
+	margin-bottom: 10px;
+}
+.type-training__monospace > p {
+	font-weight: 400;
+	text-transform: capitalize;
+	color: green;
+}
+.type-training__monospace > p ~ p {
+	font-weight: 700;
+	text-transform: lowercase;
+	text-decoration: underline;
+	text-decoration-color: rgb(234, 255, 0);
+	text-decoration-style: double;
+	color: #000000;
+}
+.type-training__monospace > p ~ p ~ p {
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration-color: rgb(255, 0, 195);
+	text-decoration-style: dotted;
+	color: rgb(183, 208, 38);
+}
+.type-training__monospace > p ~ p ~ p ~ p {
+	font-weight: 400;
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration-color: red;
+	text-decoration-style: wavy;
+	color: gray;
+}
