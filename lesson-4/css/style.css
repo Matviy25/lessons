@@ -9,8 +9,6 @@
 /* Скидання стилів */
 @import url("reset.css");
 /* --------------------------------------------------------------------------- */
-.page {
-}
 .page__blog {
 	padding-top: 24px;
 	padding-bottom: 24px;
@@ -36,8 +34,6 @@
 	margin-bottom: 24px;
 }
 /* --------------------------------------------------------------------------- */
-.page__training {
-}
 .training {
 	padding-bottom: 24px;
 }
@@ -53,8 +49,6 @@
 }
 .training__title:not(:last-child) {
 	margin-bottom: 25px;
-}
-.training__type {
 }
 .type-training {
 	font-size: 25px;
