@@ -1,0 +1,223 @@
+/* Підключення фрифтів */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "CircularStd", sans-serif;
+	font-size: 14px;
+}
+[class*="__container"] {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* ----------------------------------------------------------------------------------- */
+.page__advantages {
+	margin-bottom: 50px;
+}
+.advantages {
+	background-color: #231f8b;
+	padding-top: 112px;
+	padding-bottom: 112px;
+}
+.advantages__header:not(:last-child) {
+	margin-bottom: 70px;
+}
+.header-advantages {
+	color: #fff;
+	max-width: 765px;
+}
+.header-advantages__label {
+	color: #5a54f2;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	line-height: 1.71;
+	letter-spacing: 0.2px;
+	text-transform: capitalize;
+}
+.header-advantages__label:not(:last-child),
+.header-advantages__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+.header-advantages__title {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.27;
+}
+.header-advantages__text {
+	line-height: 1.42;
+	letter-spacing: 0.2px;
+}
+.advantages__items {
+	font-size: 0;
+	min-height: 360px;
+}
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages {
+	background-color: #5a54f2;
+}
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages h3,
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages div {
+	color: #fff;
+}
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages span {
+	background-color: #fff;
+}
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages ~ .item-advantages {
+	background-color: #fff;
+}
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages ~ .item-advantages h3,
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages ~ .item-advantages div {
+	color: #252b42;
+}
+.advantages__items > .item-advantages ~ .item-advantages + .item-advantages ~ .item-advantages span {
+	background-color: #e74040;
+}
+.advantages__item:not(:last-child) {
+	margin-right: 43px;
+}
+.item-advantages {
+	display: inline-block;
+	width: 21.904762%; /* 230/1050 */
+	vertical-align: top;
+	background-color: #fff;
+	padding: 35px 40px;
+}
+.advantages__bottom {
+	margin-top: 48px;
+}
+.item-advantages__icon {
+	width: 70px;
+	height: 70px;
+}
+.item-advantages__icon:not(:last-child),
+.item-advantages__decor:not(:last-child),
+.item-advantages__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+.item-advantages__decor {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: #e74040;
+}
+.item-advantages__title {
+	color: #252b42;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0.1px;
+	text-transform: capitalize;
+}
+.item-advantages__text {
+	color: #737373;
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 1.42;
+	letter-spacing: 0.2px;
+	max-width: 132px;
+}
+/* ----------------------------------------------------------------------------------- */
+.page__training {
+}
+.block {
+	background-color: #6161db;
+}
+.inline {
+	background-color: #17a05b;
+}
+.inline-block {
+	background-color: #d5e927;
+}
+.training__title {
+	font-size: 35px;
+	text-align: center;
+	color: #231f8b;
+}
+.training__title:not(:last-child) {
+	margin-bottom: 30px;
+}
+.training__padding:not(:last-child),
+.training__margin:not(:last-child),
+.training__width-height:not(:last-child),
+.training__vertical-align:not(:last-child) {
+	margin-bottom: 30px;
+}
+.padding {
+}
+.padding__block {
+	padding: 20px 30px;
+}
+.padding__inline {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 40px;
+}
+.padding__inline-block {
+	padding: 35px;
+}
+/* ------------------------------------------------------------------------------------- */
+.margin__block {
+	margin: 50px 20px 15px;
+}
+.margin__inline {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 15px;
+	margin-right: 25px;
+}
+.margin__inline-block {
+	margin: 5%;
+}
+/* ------------------------------------------------------------------------------------- */
+.width-height__block {
+	max-width: 30%;
+	max-height: 50px;
+	overflow: scroll;
+}
+.width-height__inline {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+.width-height__inline-block {
+	min-width: 100px;
+	min-height: 100%;
+}
+.width-height__overflow-auto {
+	max-width: 350px;
+	max-height: 80px;
+	overflow: auto;
+	background-color: yellow;
+}
+/* ------------------------------------------------------------------------------------ */
+.training__vertical-align {
+}
+.vertical-align {
+	font-size: 0;
+}
+.vertical-align__top .vertical-align__inline-block {
+	vertical-align: top;
+}
+.vertical-align__middle .vertical-align__inline-block {
+	vertical-align: middle;
+}
+.vertical-align__bottom .vertical-align__inline-block {
+	vertical-align: bottom;
+}
+.vertical-align__inline-block {
+	max-width: 300px;
+}
+.vertical-align__inline-block:not(:last-child) {
+	margin-right: 20px;
+}
+.vertical-align__inline {
+	font-size: 25px;
+}
