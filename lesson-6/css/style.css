@@ -1,0 +1,177 @@
+/* Підключення фрифтів */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico:regular&display=swap");
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.header,
+.footer {
+	text-align: center;
+	font-size: 50px;
+	font-family: "Pacifico", cursive;
+	line-height: 1.5;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(240, 240, 240, 0.85));
+}
+/* --------------------------------------------------------------------------------- */
+.page__descriptions {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #808080;
+}
+.page__descriptions {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.descriptions__container {
+	max-width: 680px;
+}
+.descriptions__text,
+.descriptions__list {
+	margin-bottom: 20px;
+}
+.descriptions__text > p + p {
+	margin-top: 20px;
+}
+.descriptions__item:not(:last-child) {
+	margin-bottom: 14px;
+}
+.descriptions__item {
+	min-height: 20px;
+	padding-left: 28px;
+	background: url(../img/icons/check.svg) 0 0 / 20px no-repeat;
+}
+/* --------------------------------------------------------------------------------- */
+.page__hydra {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.25; /* 44/36 */
+	background-color: #302c42;
+	color: #fff;
+}
+.hydra__about {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: url(../img/decor_wave.png) center no-repeat;
+}
+.about-hydra__container,
+.information-hydra__container {
+	max-width: 1308px;
+}
+.about-hydra__image {
+	max-width: 524px;
+	min-height: 557px;
+	border-radius: 100px 240px;
+	background-color: #a3a3a3;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin-right: 108px;
+}
+.about-hydra__body {
+	display: inline-block;
+	width: 49.295775%;
+	vertical-align: middle;
+}
+.about-hydra__title {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.about-hydra__title {
+	margin-bottom: 5px;
+}
+.about-hydra__label {
+	color: rgba(255, 255, 255, 0.95);
+	font-size: 36px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.about-hydra__label {
+	margin-bottom: 42px;
+}
+.about-hydra__text {
+	margin-bottom: 28px;
+}
+.about-hydra__buttom {
+	border-radius: 40px;
+	background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+	color: #343045;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	padding: 17px 40px;
+}
+/* --------------------------------------------------------------------------------- */
+.hydra__information {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.information-hydra__wrapper {
+	border-radius: 90px;
+	background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%);
+	box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+	padding: 26px;
+	text-align: center;
+}
+.information-hydra__wrapper > .information-hydra__item ~ .information-hydra__item {
+	padding-left: 50px;
+}
+.information-hydra__wrapper > .information-hydra__item {
+	border-right: 1px solid rgba(192, 183, 232, 0.33);
+}
+.information-hydra__wrapper > .information-hydra__item ~ .information-hydra__item + .information-hydra__item {
+	border-right: 0;
+}
+.information-hydra__item {
+	display: inline-block;
+	text-align: left;
+	padding-right: 50px;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	max-width: 425px;
+}
+.information-hydra__location {
+	background: url(../img/icons/location.svg) 0 50% / 55px 55px no-repeat;
+	min-height: 55px;
+	padding-left: 84px;
+}
+.information-hydra__title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.information-hydra__title {
+	margin-bottom: 9px;
+}
+.information-hydra__text {
+	font-size: 14px;
+}
+.information-hydra__phone {
+	background: url(../img/icons/phone.svg) 0 50% / 55px 55px no-repeat;
+	min-height: 55px;
+	padding-left: 84px;
+}
+.information-hydra__mail {
+	background: url(../img/icons/mail.svg) 0 50% / 55px 55px no-repeat;
+	min-height: 55px;
+	padding-left: 84px;
+}
