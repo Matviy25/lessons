@@ -1,0 +1,267 @@
+/* Підключення фрифтів */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header,
+.footer {
+	text-align: center;
+	font-size: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-weight: 700;
+}
+.page {
+}
+.footer {
+}
+[class*="__container"] {
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* ------------------------------------------------------------------ */
+.page__professional-faculty:not(:last-child) {
+	margin-bottom: 55px;
+}
+.professional-faculty {
+	background-color: #412672;
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+.professional-faculty__container {
+	max-width: 1231px;
+}
+.professional-faculty__header-block {
+	color: #fff;
+	line-height: 1.21;
+	font-size: 38px;
+}
+.professional-faculty__header-block:not(:last-child) {
+	margin-bottom: 31px;
+}
+.professional-faculty__label {
+}
+.professional-faculty__title {
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.professional-faculty__items {
+	font-size: 0;
+}
+.professional-faculty__item:not(:last-child) {
+	margin-right: 20px;
+}
+.item-faculty {
+	display: inline-block;
+	width: 32.223147%; /* 387/1201 */
+	vertical-align: top;
+	background-color: #fff;
+	box-shadow:
+		0px 384px 108px 0px rgba(0, 0, 0, 0),
+		0px 246px 98px 0px rgba(0, 0, 0, 0.01),
+		0px 138px 83px 0px rgba(0, 0, 0, 0.05),
+		0px 62px 62px 0px rgba(0, 0, 0, 0.09),
+		0px 15px 34px 0px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	transition: background-color 0.3s;
+}
+.item-faculty:hover {
+	background-color: #ffbe48;
+}
+.item-faculty__image {
+	max-width: 100%;
+}
+.item-faculty__image:not(:last-child),
+.item-faculty__name:not(:last-child),
+.item-faculty__text:not(:last-child) {
+	margin-bottom: 16px;
+}
+.item-faculty__name {
+	color: #000;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.22;
+}
+.item-faculty__text {
+	color: #4f4f4f;
+	font-size: 15px;
+	line-height: 1.26;
+	min-height: 76px;
+}
+.item-faculty__link {
+	color: #fe3f3f;
+	font-size: 15px;
+	line-height: 1.26; /* 126.667% */
+	transition: color 0.3s;
+}
+.item-faculty__link:hover {
+	color: #412672;
+}
+/* ------------------------------------------------------------ */
+.page__best-faculty {
+	margin-bottom: 55px;
+}
+.best-faculty {
+	background-color: #fff;
+}
+.best-faculty__container {
+	max-width: 548px;
+}
+.best-faculty__title {
+	color: #412672;
+	font-size: 34px;
+	line-height: 1.2;
+}
+.best-faculty__title span {
+	font-weight: 700;
+}
+.best-faculty__title:not(:last-child),
+.best-faculty__text:not(:last-child) {
+	margin-bottom: 20px;
+}
+.best-faculty__text {
+	color: #412672;
+	font-size: 22px;
+	line-height: 1.22;
+}
+.best-faculty__list {
+}
+.best-faculty__item {
+	color: #4f4f4f;
+	font-size: 20px;
+	line-height: 1.45;
+}
+.best-faculty__item::before {
+	content: "";
+	width: 29px;
+	min-height: 29px;
+	background: url(../img/icons/check.svg) 0 0 no-repeat;
+	vertical-align: top;
+	margin-right: 15px;
+}
+.best-faculty__item:not(:last-child) {
+	margin-bottom: 21px;
+}
+/* ----------------------------------------------------------------- */
+.page__game {
+	padding-bottom: 150px;
+}
+.game {
+}
+.game__container {
+	max-width: 900px;
+	font-size: 0;
+}
+.game__title {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+}
+.game__title:not(:last-child) {
+	margin-bottom: 30px;
+}
+.game__start:hover,
+.finish:hover {
+	transform: scale(1.1);
+}
+.start {
+	background: url(../img/game/start.png) 0 0 / contain no-repeat;
+	width: 200px;
+	height: 100px;
+	transition: transform 0.3s;
+}
+.game__line {
+	visibility: hidden;
+}
+.first {
+	width: 100px;
+	height: 80px;
+	display: inline-block;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	visibility: visible;
+	background-color: blue;
+}
+.first:hover ~ .second,
+.second:hover,
+.second:hover ~ .third,
+.third:hover,
+.third:hover ~ .fourth,
+.fourth:hover,
+.fourth:hover ~ .fifth,
+.fifth:hover,
+.fifth:hover ~ .sixth,
+.sixth:hover,
+.sixth:hover ~ .finish,
+.finish:hover {
+	visibility: visible;
+}
+
+.second {
+	display: inline-block;
+	width: 500px;
+	height: 80px;
+	border-top-right-radius: 15px;
+	background-color: green;
+}
+.third {
+	width: 50px;
+	height: 150px;
+	margin-left: 550px;
+	background-color: orange;
+}
+.fourth {
+	width: 400px;
+	height: 30px;
+	margin-left: 200px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-color: green;
+}
+.fifth {
+	width: 25px;
+	height: 50px;
+	margin-left: 200px;
+	background-color: blue;
+}
+.sixth {
+	width: 200px;
+	height: 25px;
+	margin-left: 200px;
+	display: inline-block;
+	vertical-align: top;
+	border-bottom-left-radius: 15px;
+	background-color: orange;
+}
+.game__finish {
+	display: inline-block;
+	background: url(../img/game/end.png) 0 0 / contain no-repeat;
+	width: 200px;
+	height: 100px;
+}
+.finish {
+	visibility: hidden;
+	transition: transform 0.3s;
+}
